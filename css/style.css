@@ -88,3 +88,18 @@ strong {
     font-size: 1.6rem;
   }
 }
+
+/* Projects */
+.project {
+  margin-bottom: 2em;
+}
+
+.project h2 {
+  margin-bottom: 0.2em;
+}
+
+.project .meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.6em;
+}
