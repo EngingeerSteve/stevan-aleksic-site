@@ -155,11 +155,11 @@ article li {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  flex-shrink: 0;
 }
 
 .hero-content {
@@ -171,10 +171,6 @@ article li {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
 
   .cta-buttons {
     flex-direction: column;
@@ -197,12 +193,6 @@ article li {
     align-items: flex-start;
     text-align: left;
     gap: 2rem;
-  }
-
-  .profile-photo {
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
   }
 }
 
