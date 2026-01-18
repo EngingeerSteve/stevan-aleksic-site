@@ -4,42 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name – CV & Projects</title>
+  <title>Stevan Aleksic – Software Developer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="projects.html">Projects</a>
-    <a href="blog.html">Blog</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Stevan Aleksic</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="cv.html" class="nav-link">CV</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
-    <h1>Stevan Aleksic</h1>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="images/profile.jpg" alt="Stevan Aleksic" class="profile-photo">
+        <div class="hero-text">
+          <h1>Stevan Aleksic</h1>
+          <p class="tagline">Software Developer · Systems & Infrastructure Enthusiast</p>
+          <p class="bio">
+            Software developer with a background in electrical engineering and automation.
+            Currently at TRUMPF, building robust systems and exploring infrastructure challenges.
+          </p>
+          <div class="cta-buttons">
+            <a href="cv.html" class="btn btn-primary">View CV</a>
+            <a href="projects.html" class="btn btn-secondary">See Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p>
-      Software developer with a background in electrical engineering and automation,
-      currently working at TRUMPF. This site serves as my personal space to document
-      projects, share technical insights, and experiment with systems and infrastructure.
-    </p>
-
-    <nav>
-      <ul>
-        <li><a href="/cv.html">Curriculum Vitae</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-      </ul>
-    </nav>
+    <section class="featured">
+      <h2>Featured</h2>
+      <div class="featured-grid">
+        <a href="projects.html" class="featured-card">
+          <h3>Projects</h3>
+          <p>Explore my technical projects and experiments</p>
+        </a>
+        <a href="blog.html" class="featured-card">
+          <h3>Blog</h3>
+          <p>Technical insights and project documentation</p>
+        </a>
+        <a href="https://github.com/EngingeerSteve" target="_blank" class="featured-card">
+          <h3>GitHub</h3>
+          <p>Open source work and code repositories</p>
+        </a>
+      </div>
+    </section>
   </main>
   
   <footer>
-    <p>
-      © 2026 Stevan Aleksic ·
+    <div class="footer-content">
+      <p>&copy; 2026 Stevan Aleksic</p>
       <a href="https://github.com/EngingeerSteve" target="_blank">GitHub</a>
-    </p>
+    </div>
   </footer>
 
 </body>
