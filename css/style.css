@@ -155,8 +155,8 @@ article li {
 }
 
 .profile-photo {
-  width: 96px;
-  height: 96px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   object-fit: cover;
   flex-shrink: 0;
@@ -184,15 +184,31 @@ article li {
   .featured-grid {
     grid-template-columns: 1fr;
   }
+
+  .profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
 }
 
 /* Desktop */
 @media (min-width: 769px) {
   .hero-content {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
     gap: 2rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
   }
 }
 
