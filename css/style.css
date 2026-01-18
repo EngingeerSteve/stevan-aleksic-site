@@ -153,3 +153,42 @@ article ul {
 article li {
   margin-bottom: 0.4rem;
 }
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+  }
+}
