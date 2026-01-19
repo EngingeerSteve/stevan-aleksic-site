@@ -43,7 +43,7 @@ nav {
 .nav-logo {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   color: #222;
   text-decoration: none;
 }
@@ -64,6 +64,7 @@ nav a {
   text-decoration: none;
   color: #0066cc;
   margin-right: 0;
+  padding: 15px
 }
 
 nav a:hover {
@@ -106,21 +107,6 @@ p {
 /* Subtle emphasis */
 strong {
   font-weight: 600;
-}
-
-/* Mobile friendliness */
-@media (max-width: 600px) {
-  body {
-    padding: 30px 15px;
-  }
-
-  nav {
-    font-size: 0.9rem;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
 }
 
 /* Projects */
@@ -189,11 +175,12 @@ article li {
 }
 
 .profile-photo {
-  width: 70px;
-  height: 70px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
+  margin-top: 2rem;
 }
 
 .hero-content {
@@ -250,17 +237,20 @@ article li {
 
   .nav-container {
     flex-direction: row;
-    align-items: center;
+    height: auto;
     justify-content: space-between;
+    align-items: center;
   }
 
   .nav-menu {
     flex-direction: row;
+    flex: 0;
     gap: 1rem;
   }
 
   .nav-menu li {
     margin-bottom: 0;
+    text-align: center;
   }
 }
 
