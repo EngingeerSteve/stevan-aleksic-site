@@ -22,30 +22,26 @@ main {
 
 /* Navigation */
 nav {
-  max-width: 100%;
-  margin: 0;
-  padding: 20px 40px;
-  font-size: 0.95rem;
   position: fixed;
   left: 0;
   top: 0;
   width: 250px;
   height: 100vh;
+  padding: 20px 40px;
   background-color: white;
   border-right: 1px solid #ddd;
+  font-size: 0.95rem;
 }
 
-.nav-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-logo {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0;
-  color: #222;
+nav a {
   text-decoration: none;
+  color: #0066cc;
+  display: block;
+  padding: 8px 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .nav-menu {
@@ -54,21 +50,7 @@ nav {
   margin: 0;
   display: flex;
   flex-direction: column;
-}
-
-.nav-menu li {
-  margin-bottom: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #0066cc;
-  margin-right: 0;
-  padding: 15px
-}
-
-nav a:hover {
-  text-decoration: underline;
+  gap: 1rem;
 }
 
 /* Headings */
@@ -107,21 +89,6 @@ p {
 /* Subtle emphasis */
 strong {
   font-weight: 600;
-}
-
-/* Projects */
-.project {
-  margin-bottom: 2em;
-}
-
-.project h2 {
-  margin-bottom: 0.2em;
-}
-
-.project .meta {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0.6em;
 }
 
 /* Footer */
@@ -175,8 +142,8 @@ article li {
 }
 
 .profile-photo {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -188,70 +155,6 @@ article li {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-/* Desktop */
-@media (min-width: 769px) {
-  .hero-content {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 2rem;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-  .cta-buttons {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .featured-grid {
-    grid-template-columns: 1fr;
-  }
-
-  nav {
-    width: 100%;
-    height: auto;
-    position: relative;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    padding: 20px;
-  }
-
-  body {
-    margin-left: 0;
-    padding: 20px;
-  }
-
-  .nav-container {
-    flex-direction: row;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-menu {
-    flex-direction: row;
-    flex: 0;
-    gap: 1rem;
-  }
-
-  .nav-menu li {
-    margin-bottom: 0;
-    text-align: center;
-  }
 }
 
 .hero {
@@ -271,13 +174,15 @@ article li {
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
-
+/* Call-to-action buttons */
 .cta-buttons {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* Button styles */
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -287,6 +192,8 @@ article li {
   display: inline-block;
   cursor: pointer;
   border: none;
+  min-width: 150px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -308,35 +215,77 @@ article li {
   background-color: #e8e8e8;
 }
 
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+.btn-gray {
+  background-color: #666;
+  color: white;
 }
 
-.featured-card {
-  padding: 1.5rem;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #222;
-  transition: all 0.3s ease;
+/* Desktop */
+@media (min-width: 769px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .profile-photo {
+    width: 300px;
+    height: 300px;
+  }
+
+    .cta-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    row-gap: 1rem;
+  }
 }
 
-.featured-card:hover {
-  border-color: #0066cc;
-  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
-  transform: translateY(-2px);
-}
+/* Mobile */
+@media (max-width: 768px) {
 
-.featured-card h3 {
-  margin-top: 0;
-  color: #0066cc;
+  .profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 2rem;
 }
+  .cta-buttons {
+    width: 50%;
+    flex-direction: column;
+  }
 
-.featured-card p {
-  color: #666;
-  margin-bottom: 0;
+  .btn {
+    min-width: 60%;
+    text-align: center;
+  }
+
+  body {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+  }
 }
