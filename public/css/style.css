@@ -234,8 +234,7 @@ article li {
     height: 300px;
   }
 
-    .cta-buttons {
-    flex-direction: column;
+  .cta-buttons {
     gap: 0.5rem;
     row-gap: 1rem;
   }
@@ -243,17 +242,7 @@ article li {
 
 /* Mobile */
 @media (max-width: 768px) {
-
-  .profile-photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  margin-top: 2rem;
-}
   .cta-buttons {
-    width: 50%;
     flex-direction: column;
   }
 
@@ -267,6 +256,10 @@ article li {
     padding: 20px;
   }
 
+  .btn-primary:hover {
+    background-color: #0052a3;
+  }
+
   nav {
     width: 100%;
     height: auto;
@@ -274,13 +267,6 @@ article li {
     border-right: none;
     border-bottom: 1px solid #ddd;
     padding: 20px;
-  }
-
-  .nav-container {
-    flex-direction: row;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .nav-menu {
