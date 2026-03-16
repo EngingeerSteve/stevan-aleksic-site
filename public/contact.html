@@ -4,66 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact – Stevan Aleksic</title>
+  <title>Contact | Stevan Aleksic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
-<body>
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="index.html" class="btn btn-primary">Home</a></li>
-      <li><a href="cv.html" class="btn btn-primary">CV</a></li>
-      <li><a href="projects.html" class="btn btn-primary">Projects</a></li>
-      <li><a href="blog.html" class="btn btn-primary">Blog</a></li>
-      <li><a href="contact.html" class="btn btn-gray">Contact</a></li>
-    </ul>
-  </nav>
+<body class="page-site">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
-    <section class="contact">
-      <h1>Get in Touch</h1>
-      <p>Have a question or want to collaborate? I'd love to hear from you.</p>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy">
+          <strong>Stevan Aleksic</strong>
+          <span>Software Developer</span>
+        </span>
+      </a>
 
-      <form class="contact-form" action="#" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-backdrop"></div>
+        <div class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="cv.html">CV</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" aria-current="page">Contact</a>
         </div>
+      </nav>
+    </div>
+  </header>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+  <main id="main" class="page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Reach out for collaboration, conversation, or project-related questions.</h1>
+      <p class="lede">
+        If you want to talk about software, infrastructure, or practical engineering work, send a message.
+      </p>
+    </section>
 
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required>
-        </div>
+    <section class="section-grid">
+      <section class="content-panel">
+        <h2>Send a message</h2>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
 
-      <div class="contact-info">
-        <h2>Other ways to reach me</h2>
-        <p>
-          <strong>Email:</strong> <a href="mailto:stevan@stevan.dev">stevan@stevan.dev</a>
-        </p>
-        <p>
-          <strong>GitHub:</strong> <a href="https://github.com/EngingeerSteve" target="_blank">EngingeerSteve</a>
-        </p>
-      </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary">Send message</button>
+        </form>
+      </section>
+
+      <aside class="content-panel">
+        <h2>Elsewhere</h2>
+        <ul class="stack-list">
+          <li><strong>Email</strong><br><a href="mailto:stevan@stevan.dev">stevan@stevan.dev</a></li>
+          <li><strong>GitHub</strong><br><a href="https://github.com/EngingeerSteve" target="_blank"
+              rel="noreferrer">EngingeerSteve</a></li>
+        </ul>
+      </aside>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
+  <footer class="site-footer">
+    <div class="footer-shell">
       <p>&copy; 2026 Stevan Aleksic</p>
-      <a href="https://github.com/EngingeerSteve" target="_blank">GitHub</a>
+      <a href="https://github.com/EngingeerSteve" target="_blank" rel="noreferrer">GitHub</a>
     </div>
   </footer>
 </body>

@@ -4,42 +4,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stevan Aleksic – Software Developer</title>
+  <title>Stevan Aleksic | Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Stevan Aleksic, a software developer focused on reliable systems, infrastructure, and practical engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
-<body>
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="index.html" class="btn btn-gray">Home</a></li>
-      <li><a href="cv.html" class="btn btn-primary">CV</a></li>
-      <li><a href="projects.html" class="btn btn-primary">Projects</a></li>
-      <li><a href="blog.html" class="btn btn-primary">Blog</a></li>
-      <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
-    </ul>
-  </nav>
+<body class="page-site page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <img src="images/profile.jpg" alt="Stevan Aleksic" class="profile-photo">
-        <div class="hero-text">
-          <h1>Stevan Aleksic</h1>
-          <p class="tagline">Software Developer · Systems & Infrastructure Enthusiast</p>
-          <p class="bio">
-            Software developer with a background in electrical engineering and automation.
-            Currently at TRUMPF, building robust systems and exploring infrastructure challenges.
-          </p>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy">
+          <strong>Stevan Aleksic</strong>
+          <span>Software Developer</span>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-backdrop"></div>
+        <div class="main-nav" id="main-nav">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="cv.html">CV</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="hero-panel hero-panel-home">
+      <div class="hero-copy">
+        <p class="eyebrow">Software, infrastructure, and industrial systems</p>
+        <h1>Building dependable software with a systems mindset.</h1>
+        <p class="lede">
+          I work on practical software shaped by real constraints: industrial workflows, automation-heavy environments,
+          and the infrastructure that keeps systems stable over time.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="projects.html">See projects</a>
+          <a class="button button-secondary" href="cv.html">Read CV</a>
+        </div>
+
+        <div class="hero-metrics" aria-label="Highlights">
+          <article>
+            <strong>Production-focused</strong>
+            <span>Reliability and maintainability over unnecessary complexity.</span>
+          </article>
+          <article>
+            <strong>Cross-discipline</strong>
+            <span>Software informed by automation, hardware, and systems thinking.</span>
+          </article>
+          <article>
+            <strong>Infrastructure-aware</strong>
+            <span>Comfortable with Linux, deployment, networking, and self-hosted setups.</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="images/profile.jpg" alt="Portrait of Stevan Aleksic" class="profile-photo">
+        </div>
+
+        <div class="signal-card">
+          <p class="signal-label">Current focus</p>
+          <p>Robust software at TRUMPF, plus side projects around home infrastructure, static hosting, and deployment
+            workflows.</p>
         </div>
       </div>
     </section>
-  <footer>
-    <div class="footer-content">
+
+    <section class="section-grid">
+      <article class="content-panel">
+        <p class="eyebrow">Approach</p>
+        <h2>Engineering that stays useful when the system gets real.</h2>
+        <p>
+          I care about software that is understandable, durable, and grounded in how it will actually be used later,
+          not just how it looks in a demo.
+        </p>
+      </article>
+
+      <article class="content-panel accent-panel">
+        <p class="eyebrow">Strengths</p>
+        <ul class="stack-list">
+          <li>Clear logic and maintainable structure</li>
+          <li>Operational awareness beyond the code itself</li>
+          <li>Bridging software work with industrial and embedded contexts</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="focus-strip">
+      <div>
+        <p class="eyebrow">Areas of interest</p>
+        <h2>Practical tools, stable systems, and infrastructure that quietly does its job.</h2>
+      </div>
+      <div class="pill-row">
+        <span>Python</span>
+        <span>Linux</span>
+        <span>Git</span>
+        <span>Automation</span>
+        <span>Industrial Software</span>
+        <span>Deployment</span>
+        <span>Networking</span>
+        <span>Static Web</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
       <p>&copy; 2026 Stevan Aleksic</p>
-      <a href="https://github.com/EngingeerSteve" target="_blank">GitHub</a>
+      <a href="https://github.com/EngingeerSteve" target="_blank" rel="noreferrer">GitHub</a>
     </div>
   </footer>
-
 </body>
 
 </html>

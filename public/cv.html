@@ -4,118 +4,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV – Stevan Aleksic</title>
+  <title>CV | Stevan Aleksic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
-<body>
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="index.html" class="btn btn-primary">Home</a></li>
-      <li><a href="cv.html" class="btn btn-gray">CV</a></li>
-      <li><a href="projects.html" class="btn btn-primary">Projects</a></li>
-      <li><a href="blog.html" class="btn btn-primary">Blog</a></li>
-      <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
-    </ul>
-  </nav>
+<body class="page-site">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
-    <h1>CV</h1>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy">
+          <strong>Stevan Aleksic</strong>
+          <span>Software Developer</span>
+        </span>
+      </a>
 
-    <section>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-backdrop"></div>
+        <div class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="cv.html" aria-current="page">CV</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">CV</p>
+      <h1>Background in software, automation, and practical system design.</h1>
+      <p class="lede">
+        Software developer with a background in electrical engineering and automation, currently focused on reliable
+        software systems in an industrial environment.
+      </p>
+    </section>
+
+    <section class="content-panel">
       <h2>Profile</h2>
       <p>
-        Software developer with a background in electrical engineering and automation.
-        Currently working at TRUMPF, focusing on building and maintaining reliable
-        software systems in an industrial environment. Strong interest in clean code,
-        infrastructure, and practical problem solving across the full stack.
+        I work best on software that needs to stay understandable and dependable over time. My experience sits between
+        application development, industrial systems, and the operational context around them.
       </p>
     </section>
 
-    <section>
+    <section class="content-panel">
       <h2>Experience</h2>
+      <div class="timeline-list">
+        <article>
+          <h3>Software Developer — TRUMPF</h3>
+          <p class="meta">Apr 2021 – Present · Ditzingen, Germany</p>
+          <ul class="stack-list">
+            <li>Develop and maintain software solutions in an industrial and manufacturing context</li>
+            <li>Work with Python and Git as part of a collaborative development workflow</li>
+            <li>Contribute to long-term production systems with a focus on reliability</li>
+            <li>Collaborate across software, automation, and hardware-adjacent domains</li>
+          </ul>
+        </article>
 
-      <p><strong>Software Developer — TRUMPF</strong><br>
-        <em>Apr 2021 – Present · Ditzingen, Germany</em>
-      </p>
-      <ul>
-        <li>Develop and maintain software solutions in an industrial and manufacturing context</li>
-        <li>Work with Python and Git as part of a collaborative development workflow</li>
-        <li>Contribute to long-term, production-grade systems with a focus on reliability</li>
-        <li>Collaborate with engineers across software, automation, and hardware domains</li>
-      </ul>
+        <article>
+          <h3>Bachelor Thesis Student — TRUMPF</h3>
+          <p class="meta">Sep 2020 – Mar 2021</p>
+          <ul class="stack-list">
+            <li>Worked in Smart Factory, Industry 4.0, and automation technology</li>
+            <li>Focused on applied research bridging software and industrial systems</li>
+          </ul>
+        </article>
 
-      <p><strong>Bachelor Thesis Student — TRUMPF</strong><br>
-        <em>Sep 2020 – Mar 2021</em>
-      </p>
-      <ul>
-        <li>Worked in the area of Smart Factory, Industry 4.0, and automation technology</li>
-        <li>Focused on applied research bridging software, automation, and industrial systems</li>
-      </ul>
-
-      <p><strong>Automation Intern — TRUMPF</strong><br>
-        <em>Feb 2020 – Sep 2020</em>
-      </p>
-      <ul>
-        <li>Internship in Smart Factory, Industry 4.0, and Internet of Things environments</li>
-        <li>Gained hands-on experience with industrial automation systems</li>
-      </ul>
+        <article>
+          <h3>Automation Intern — TRUMPF</h3>
+          <p class="meta">Feb 2020 – Sep 2020</p>
+          <ul class="stack-list">
+            <li>Internship in Smart Factory, Industry 4.0, and Internet of Things environments</li>
+            <li>Gained hands-on experience with industrial automation systems</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Education</h2>
+    <section class="section-grid">
+      <article class="content-panel">
+        <h2>Education</h2>
+        <ul class="stack-list">
+          <li><strong>B.Sc. Electrical Engineering (Automation)</strong><br>Hochschule Mannheim · 2016 – 2021</li>
+          <li><strong>High School Diploma</strong><br>North Olmsted High School · 2012 – 2016</li>
+        </ul>
+      </article>
 
-      <p><strong>B.Sc. Electrical Engineering (Automation)</strong><br>
-        Hochschule Mannheim · 2016 – 2021</p>
-
-      <p><strong>High School Diploma</strong><br>
-        North Olmsted High School · 2012 – 2016</p>
+      <article class="content-panel">
+        <h2>Skills</h2>
+        <ul class="stack-list">
+          <li>Programming: Python, C, Embedded C</li>
+          <li>Web: HTML, CSS</li>
+          <li>Tools: Git, Linux</li>
+          <li>Automation and embedded systems</li>
+        </ul>
+      </article>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <p>
-        <strong>Student Research Project:</strong> Implementation of a Profibus interface
-        on a PLC-based automated storage system interface simulator.
-      </p>
-    </section>
+    <section class="section-grid">
+      <article class="content-panel">
+        <h2>Projects</h2>
+        <p>
+          Student research project: implementation of a Profibus interface on a PLC-based automated storage system
+          interface simulator.
+        </p>
+      </article>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Programming: Python, C, Embedded C</li>
-        <li>Web: HTML, CSS</li>
-        <li>Tools: Git, Linux</li>
-        <li>Automation & Embedded Systems</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>C Programming for Embedded Applications (2025)</li>
-        <li>AI Productivity Hacks for Engineers (2025)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Languages</h2>
-      <ul>
-        <li>English — Native / Bilingual</li>
-        <li>Serbian/Croatian — Native / Bilingual</li>
-        <li>German - Native</li>
-      </ul>
+      <article class="content-panel">
+        <h2>Certifications & Languages</h2>
+        <ul class="stack-list">
+          <li>C Programming for Embedded Applications (2025)</li>
+          <li>AI Productivity Hacks for Engineers (2025)</li>
+          <li>English — Native / Bilingual</li>
+          <li>Serbian/Croatian — Native / Bilingual</li>
+          <li>German — Native</li>
+        </ul>
+      </article>
     </section>
   </main>
 
-
-  <footer>
-    <p>
-      © 2026 Stevan Aleksic ·
-      <a href="https://github.com/EngingeerSteve" target="_blank">GitHub</a>
-    </p>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p>&copy; 2026 Stevan Aleksic</p>
+      <a href="https://github.com/EngingeerSteve" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
   </footer>
-
 </body>
 
 </html>

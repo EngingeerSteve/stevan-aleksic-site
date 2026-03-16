@@ -4,60 +4,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects – Stevan Aleksic</title>
+  <title>Projects | Stevan Aleksic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
-<body>
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="index.html" class="btn btn-primary">Home</a></li>
-      <li><a href="cv.html" class="btn btn-primary">CV</a></li>
-      <li><a href="projects.html" class="btn btn-gray">Projects</a></li>
-      <li><a href="blog.html" class="btn btn-primary">Blog</a></li>
-      <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
-    </ul>
-  </nav>
+<body class="page-site">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
-    <h1>Projects</h1>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy">
+          <strong>Stevan Aleksic</strong>
+          <span>Software Developer</span>
+        </span>
+      </a>
 
-    <section class="project">
-      <h2>Personal Home Server</h2>
-      <p class="meta">Raspberry Pi · Linux · Nginx · Docker · Git</p>
-      <p>
-        Built and configured a home server running Linux with a static website,
-        Docker services, and Git-based deployment. Focus on clean setup,
-        permissions, and maintainability.
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-backdrop"></div>
+        <div class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="cv.html">CV</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Projects</p>
+      <h1>Hands-on work across hosting, networking, and self-managed systems.</h1>
+      <p class="lede">
+        These projects reflect how I learn: by building complete systems, owning the setup, and understanding the
+        tradeoffs.
       </p>
     </section>
 
-    <section class="project">
-      <h2>Pi-hole Network Ad Blocking</h2>
-      <p class="meta">Networking · DNS · Linux</p>
-      <p>
-        Deployed Pi-hole to provide network-wide ad blocking and DNS filtering.
-        Configured alongside other services without port conflicts.
-      </p>
-    </section>
+    <section class="project-grid">
+      <article class="content-panel">
+        <h2>Personal Home Server</h2>
+        <p class="meta">Raspberry Pi · Linux · Nginx · Docker · Git</p>
+        <p>
+          Built and configured a home server running Linux with a static website, Docker services, and Git-based
+          deployment. The focus was clean setup, permissions, and maintainability.
+        </p>
+      </article>
 
-    <section class="project">
-      <h2>Personal Website & Blog</h2>
-      <p class="meta">HTML · CSS · Git · Linux</p>
-      <p>
-        Designed and implemented a personal CV, project portfolio, and blog
-        website hosted on a Raspberry Pi and version-controlled with GitHub.
-      </p>
+      <article class="content-panel">
+        <h2>Pi-hole Network Ad Blocking</h2>
+        <p class="meta">Networking · DNS · Linux</p>
+        <p>
+          Deployed Pi-hole to provide network-wide ad blocking and DNS filtering, configured alongside other services
+          without port conflicts.
+        </p>
+      </article>
+
+      <article class="content-panel">
+        <h2>Personal Website & Blog</h2>
+        <p class="meta">HTML · CSS · Git · Linux</p>
+        <p>
+          Designed and implemented a personal website, portfolio, and blog hosted on a Raspberry Pi and versioned
+          through GitHub.
+        </p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>
-      © 2026 Stevan Aleksic ·
-      <a href="https://github.com/EngingeerSteve" target="_blank">GitHub</a>
-    </p>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p>&copy; 2026 Stevan Aleksic</p>
+      <a href="https://github.com/EngingeerSteve" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
   </footer>
-
 </body>
 
 </html>
