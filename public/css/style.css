@@ -670,6 +670,15 @@ img {
   margin-top: 1.5rem;
 }
 
+.page-site .page-shell > .content-panel + .content-panel,
+.page-site .page-shell > .section-grid + .section-grid,
+.page-site .page-shell > .content-panel + .section-grid,
+.page-site .page-shell > .section-grid + .content-panel,
+.page-site .page-shell > .page-hero + .content-panel,
+.page-site .page-shell > .page-hero + .section-grid {
+  margin-top: 1.5rem;
+}
+
 .page-site .section-grid .content-panel,
 .page-site .project-grid .content-panel {
   margin: 0;
