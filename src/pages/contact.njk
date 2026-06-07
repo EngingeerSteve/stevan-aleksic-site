@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: "Contact | Stevan Aleksic"
+description: "Get in touch with Stevan Aleksic for collaboration, software projects, or engineering discussions."
+bodyClass: "page-site"
+currentPage: "contact"
+permalink: /contact.html
+---
+
+    <section class="page-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Reach out for collaboration, conversation, or project-related questions.</h1>
+      <p class="lede">
+        If you want to talk about software, infrastructure, or practical engineering work, send a message.
+      </p>
+    </section>
+
+    <section class="section-grid">
+      <section class="content-panel">
+        <h2>Send a message</h2>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary">Send message</button>
+        </form>
+      </section>
+
+      <aside class="content-panel">
+        <h2>Elsewhere</h2>
+        <ul class="stack-list">
+          <li><strong>Email</strong><br><a href="mailto:stevan@stevan.dev">stevan@stevan.dev</a></li>
+          <li><strong>GitHub</strong><br><a href="{{ meta.githubUrl }}" target="_blank"
+              rel="noreferrer">EngingeerSteve</a></li>
+        </ul>
+      </aside>
+    </section>

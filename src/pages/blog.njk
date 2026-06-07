@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: "Blog | Stevan Aleksic"
+description: "Technical notes by Stevan Aleksic on software development, infrastructure, and systems engineering."
+bodyClass: "page-site"
+currentPage: "blog"
+permalink: /blog.html
+extraContent: |
+  <div class="post-modal" data-post-modal hidden>
+    <div class="post-modal-backdrop" data-post-close></div>
+    <div class="post-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="post-modal-title">
+      <button class="post-modal-close" type="button" aria-label="Close post" data-post-close>&times;</button>
+      <div class="post-modal-content" data-post-content tabindex="-1">
+        <p class="meta">Loading post...</p>
+      </div>
+    </div>
+  </div>
+---
+
+    <section class="page-hero">
+      <p class="eyebrow">Blog</p>
+      <h1>Notes on software, infrastructure, and the systems behind the work.</h1>
+      <p class="lede">
+        A place to document projects, technical decisions, and lessons from building and maintaining real systems.
+      </p>
+    </section>
+
+    <section class="blog-list">
+      <article class="content-panel blog-item">
+        <p class="meta">January 2026</p>
+        <h2>
+          <a href="/posts/2026-01-building-my-website.html" class="post-launch"
+            data-post-url="/posts/2026-01-building-my-website.html">
+            Building My Personal Website on a Raspberry Pi
+          </a>
+        </h2>
+        <p>
+          Why I chose a simple self-hosted setup, what I learned from owning the stack, and how deliberate simplicity
+          shaped the project.
+        </p>
+      </article>
+    </section>

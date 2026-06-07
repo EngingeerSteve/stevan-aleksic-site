@@ -1,0 +1,30 @@
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy">
+          <strong>{{ meta.siteName }}</strong>
+          <span>{{ meta.siteTitle }}</span>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"
+        aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-backdrop"></div>
+        <div class="main-nav" id="main-nav">
+          <a href="/"{% if currentPage == "home" %} aria-current="page"{% endif %}>Home</a>
+          <a href="/cv.html"{% if currentPage == "cv" %} aria-current="page"{% endif %}>CV</a>
+          <a href="/projects.html"{% if currentPage == "projects" %} aria-current="page"{% endif %}>Projects</a>
+          <a href="/blog.html"{% if currentPage == "blog" %} aria-current="page"{% endif %}>Blog</a>
+          <a href="/contact.html"{% if currentPage == "contact" %} aria-current="page"{% endif %}>Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
